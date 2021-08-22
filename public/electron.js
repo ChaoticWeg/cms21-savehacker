@@ -14,7 +14,7 @@ function createWindow() {
         }
     });
 
-    const url = isDev ? `http://localhost:3000/${process.env.PUBLIC_URL}` : `file://${path.join(__dirname, "../build/index.html")}`;
+    const url = isDev ? `http://localhost:3000` : `file://${path.join(__dirname, "../build/index.html")}`;
     win.loadURL(url);
 
     if (isDev) {
